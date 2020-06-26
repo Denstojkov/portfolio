@@ -1,0 +1,97 @@
+@media screen and (max-width: 767px) {
+  #fadeinscroll {
+    height: 1110px;
+  }
+}
+.jumbotron {
+  height: 400px;
+}
+
+.headers {
+  text-align: center;
+  color: #364959;
+}
+
+.headers p {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+#card1 {
+  background-color: #5872a6;
+}
+
+#card2 {
+  background-color: #d9b79a;
+}
+#card3 {
+  background-color: #7787a6;
+}
+
+body {
+  background-color: #d8e8f2;
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.bg-dark {
+  background-color: #364959 !important;
+}
+
+.card-img-top {
+  color: white;
+}
+
+hr {
+  color: #d8e8f2;
+}
+
+.cardtitle {
+  font-size: 1.5em;
+  color: white;
+}
+
+.card {
+  -webkit-box-shadow: 0px 10px 24px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 24px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 24px -4px rgba(0, 0, 0, 0.75);
+  height: 400px;
+}
+
+.card-text {
+  color: white;
+}
+
+.card-body hr {
+  background-color: white;
+}
+
+#footer {
+  background-color: #364959;
+  height: 150px;
+}
+
+#paralax {
+  background-color: #364959;
+  width: 100%;
+  height: 125px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+#Portfolio {
+  background-color: #d8e8f2;
+}
+
+#headersport {
+  color: white;
+}
+
+#slide {
+  height: 525px;
+}
+
+#slide1 {
+  background-color: #998da9;
+}

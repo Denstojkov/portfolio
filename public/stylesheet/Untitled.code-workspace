@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"path": "../../../React"
+	},
+	{
+		"path": "../../../Restoran"
+	},
+	{
+		"path": "../../../../../../Applications/MAMP/htdocs"
+	},
+	{
+		"path": "../.."
+	}
+],
+  "settings": {}
+}

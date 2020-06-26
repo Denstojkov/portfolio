@@ -9,7 +9,7 @@ const express = require("express"),
   passportLocal = require("passport-local"),
   dotEnv = require("dotenv").config(),
   passportLocalMongoose = require("passport-local-mongoose"),
-  router = express.Router();
+  router = require("./routes");
 
 mongoose.connect("mongodb://localhost:27017/myapp", {
   useNewUrlParser: true,
@@ -24,7 +24,7 @@ app.use(
 );
 
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/public/"));
 app.use(methodOverride("_method"));
 app.set("trust proxy", 1);
 app.use(
@@ -32,8 +32,10 @@ app.use(
     secret: "Secretkey",
     resave: false,
     saveUninitialized: false,
-  })
+  }) 
 );
+
+app.use("/", router);
 
 app.listen(3000, function () {
   console.log("Server on 3000");
