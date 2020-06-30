@@ -9,6 +9,7 @@ const express = require("express"),
   passportLocal = require("passport-local"),
   dotEnv = require("dotenv").config(),
   passportLocalMongoose = require("passport-local-mongoose"),
+  Contact = require("./models/contact"),
   router = require("./routes");
 
 mongoose.connect("mongodb://localhost:27017/myapp", {
@@ -32,7 +33,7 @@ app.use(
     secret: "Secretkey",
     resave: false,
     saveUninitialized: false,
-  }) 
+  })
 );
 
 app.use("/", router);
