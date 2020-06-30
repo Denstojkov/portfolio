@@ -8,33 +8,24 @@ $(document).ready(function () {
       $(".fadein").each(function (i) {
         $(this)
           .delay(500 * i)
-          .fadeIn(1000);
+          .fadeIn(500);
       });
     }
   });
 });
 
+let slide = document.querySelectorAll(".slide");
+
 window.addEventListener("resize", function () {
-  let slide = document.querySelector("#slide1");
   let newWidth = window.innerWidth;
   console.log(newWidth);
   if (newWidth <= 666) {
-    slide1.classList.remove("moveSlide1");
-    slide1.style.textAlign = "center";
-    slide2.classList.remove("moveSlide2");
-    slide2.style.textAlign = "center";
-    slide3.classList.remove("moveSlide3");
-    slide3.style.textAlign = "center";
-    slide4.classList.remove("moveSlide4");
-    slide4.style.textAlign = "center";
+    slide.forEach((el) => {
+      this.classList.remove("slide");
+    });
   } else if ((newWidth) => 666) {
-    slide1.classList.add("moveSlide1");
-    slide1.style.removeProperty("text-align");
-    slide2.classList.add("moveSlide2");
-    slide2.style.removeProperty("text-align");
-    slide3.classList.add("moveSlide3");
-    slide3.style.removeProperty("text-align");
-    slide4.classList.add("moveSlide4");
-    slide4.style.removeProperty("text-align");
+    slide.forEach((el) => {
+      this.classList.add("slide");
+    });
   }
 });

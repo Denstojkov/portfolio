@@ -88,23 +88,12 @@ hr {
   color: white;
 }
 
-#slide {
+#slideSkill {
   height: 525px;
 }
 
-#slide1 {
+.slide {
   background-color: #666e73;
-  height: 100px;
-}
-#slide2 {
-  background-color: #666e73;
-  height: 100px;
-}
-#slide3 {
-  background-color: #666e73;
-  height: 100px;
-}
-#slide4 {
   height: 100px;
 }
 
@@ -119,19 +108,14 @@ hr {
 
 #form {
   width: 800px;
+  background-color: #d8e8f2;
+  border: 0px;
 }
 
 .nav-link:hover {
   background-color: white !important;
   color: #364959 !important;
   transition: background-color 2s, color 0, 2s;
-}
-
-#form {
-  -webkit-box-shadow: 0px 10px 24px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 10px 24px -4px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 10px 24px -4px rgba(0, 0, 0, 0.75);
-  background-color: white;
 }
 
 .moveSlide1 {
@@ -145,4 +129,21 @@ hr {
 }
 .moveSlide4 {
   padding-left: 75%;
+}
+
+.form-control {
+  background-color: #d8e8f2;
+  border: 2px solid #364959;
+  padding: 5px 0px 5px 0px;
+}
+
+#submitButton {
+  color: #364959;
+  background-color: transparent !important;
+  border: 2px solid #364959;
+}
+
+#submitButton:hover {
+  color: white;
+  background-color: #364959 !important;
 }
