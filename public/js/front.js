@@ -21,11 +21,11 @@ window.addEventListener("resize", function () {
   console.log(newWidth);
   if (newWidth <= 666) {
     slide.forEach((el) => {
-      this.classList.remove("slide");
+      el.classList.add("resPonsive");
     });
   } else if ((newWidth) => 666) {
     slide.forEach((el) => {
-      this.classList.add("slide");
+      el.classList.remove("resPonsive");
     });
   }
 });

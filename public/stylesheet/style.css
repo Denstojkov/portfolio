@@ -97,6 +97,11 @@ hr {
   height: 100px;
 }
 
+.resPonsive {
+  text-align: center;
+  padding-left: 0% !important ;
+}
+
 #fader {
   background-color: #666e73;
   font-family: "Bebas Neue", cursive;
