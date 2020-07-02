@@ -1,6 +1,11 @@
 @media screen and (max-width: 767px) {
   #fadeinscroll {
-    height: 1110px;
+    height: 1250px;
+  }
+  #projekt1 img,
+  #projekt2 img,
+  #projekt3 img {
+    height: 200px;
   }
 }
 .jumbotron {
