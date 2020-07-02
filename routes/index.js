@@ -1,9 +1,9 @@
 const contact = require("../models/contact");
 
 const express = require("express"),
-  router = express.Router(contact);
+  router = express.Router();
 
-router.get("/", (req, res) => {
+router.route("/").get((req, res) => {
   console.log("We are here!");
   res.render("index");
 });

@@ -70,7 +70,10 @@ hr {
 
 #footer {
   background-color: #364959;
-  height: 150px;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  justify-content: center;
 }
 
 #paralax {

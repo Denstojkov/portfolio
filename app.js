@@ -9,8 +9,10 @@ const express = require("express"),
   passportLocal = require("passport-local"),
   dotEnv = require("dotenv").config(),
   passportLocalMongoose = require("passport-local-mongoose"),
-  Contact = require("./models/contact"),
-  router = require("./routes");
+  Contact = require("./models/contact");
+
+let indexRoutes = require("./routes/index");
+let webshopRoutes = require("./routes/webshop");
 
 mongoose.connect("mongodb://localhost:27017/myapp", {
   useNewUrlParser: true,
@@ -36,7 +38,12 @@ app.use(
   })
 );
 
-app.use("/", router);
+app.use(indexRoutes);
+app.use(webshopRoutes);
+
+app.get("/", function (req, res) {
+  res.redirect("/index");
+});
 
 app.listen(3000, function () {
   console.log("Server on 3000");
