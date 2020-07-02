@@ -176,27 +176,18 @@ hr {
   padding: 16px 32px;
 }
 
-#projekt1:hover .image {
-  opacity: 0.3;
-}
-
-#projekt1:hover .middle {
-  opacity: 1;
-}
-#projekt2:hover .image {
-  opacity: 0.3;
-}
-
-#projekt2:hover .middle {
-  opacity: 1;
-}
+#projekt1:hover .image,
+#projekt2:hover .image,
 #projekt3:hover .image {
   opacity: 0.3;
 }
 
+#projekt1:hover .middle,
+#projekt2:hover .middle,
 #projekt3:hover .middle {
   opacity: 1;
 }
+
 a {
   color: white;
   text-decoration: none;
@@ -211,4 +202,10 @@ a:hover {
   width: 100%;
   height: 12vw;
   object-fit: cover;
+}
+
+#img1,
+#img2,
+#img3 {
+  border-radius: 15px;
 }
