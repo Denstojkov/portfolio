@@ -29,3 +29,33 @@ window.addEventListener("resize", function () {
     });
   }
 });
+
+let logo = document.getElementById("rainbow");
+let elem = document.createElement("span");
+
+logo.addEventListener("mouseenter", transition);
+logo.addEventListener("mouseleave", reset);
+
+function reset() {
+  logo.innerHTML = "My Portfolio";
+}
+
+function transition() {
+  let words = logo.textContent.split("");
+  logo.innerHTML = "";
+  words.forEach((word) => {
+    var current = document.createElement("span"); // Create element
+    current.style.color = getRandomColor();
+    current.innerHTML = word;
+    logo.appendChild(current);
+  });
+}
+
+function getRandomColor() {
+  var letters = "0123456789ABCDEF";
+  var color = "#";
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}

@@ -93,8 +93,8 @@ hr {
 }
 #Portfolio {
   background-color: #d8e8f2;
-	padding-top: 25px;
-	padding-bottom:30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
 }
 
 #headersport {
@@ -215,4 +215,18 @@ a:hover {
 #img2,
 #img3 {
   border-radius: 15px;
+}
+
+#rainbow {
+  opacity: 1;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+
+.rfade {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
 }
