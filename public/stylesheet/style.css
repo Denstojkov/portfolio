@@ -39,12 +39,17 @@ body {
   height: 100%;
   width: 100%;
   overflow: auto;
+	padding-top: 25px;
 }
 
 .bg-dark {
-  background-color: #364959 !important;
+  background-color: #666e73 !important;
 }
 
+.switch{
+	background-color: #364959 !important;
+  transition: background-color 0.5s;
+}
 .card-img-top {
   color: white;
 }
@@ -119,7 +124,7 @@ hr {
   background-color: #666e73;
   font-family: "Bebas Neue", cursive;
   font-size: 70px;
-  border-top: 1px solid white;
+  border-top: 1px solid #d8e8f2;
   border-bottom: 1px solid white;
   color: white;
 }
@@ -133,7 +138,7 @@ hr {
 .nav-link:hover {
   background-color: white !important;
   color: #364959 !important;
-  transition: background-color 2s, color 0, 2s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .moveSlide1 {
@@ -218,16 +223,16 @@ a:hover {
 }
 
 .rfade {
-  animation: fadeIn ease 1s;
-  -webkit-animation: fadeIn ease 1s;
-  -moz-animation: fadeIn ease 1s;
-  -o-animation: fadeIn ease 1s;
-  -ms-animation: fadeIn ease 1s;
+  animation: fadeIn ease 0.3s;
+  -webkit-animation: fadeIn ease 0.3s;
+  -moz-animation: fadeIn ease 0.3s;
+  -o-animation: fadeIn ease 0.3s;
+  -ms-animation: fadeIn ease 0.3s;
 }
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: 0.25;
   }
   100% {
     opacity: 1;

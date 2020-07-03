@@ -37,7 +37,7 @@ logo.addEventListener("mouseenter", transition);
 logo.addEventListener("mouseleave", reset);
 
 function reset() {
-  logo.innerHTML = "My Portfolio";
+  logo.innerHTML = "MYPORTFOLIO";
 }
 
 function transition() {
@@ -59,4 +59,10 @@ function getRandomColor() {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
+}
+
+let navbar = document.querySelectorAll(".navbar");
+if(window.innerWidth >= 400){
+	console.log("HERE!");
+	navbar.classList.replace("bg-dark", "switch");
 }
