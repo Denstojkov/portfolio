@@ -69,10 +69,12 @@ window.addEventListener("scroll", function(event) {
 	
 if(trackScroll >= 386){
 	navbar.classList.add("switch");
+
 }else{
 	navbar.classList.remove("switch");
 }
 	})
+
 
 
 

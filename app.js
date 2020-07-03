@@ -12,7 +12,7 @@ const express = require("express"),
   Contact = require("./models/contact");
 
 let indexRoutes = require("./routes/index");
-let webshopRoutes = require("./routes/webshop");
+let webshopRoutes = require("./routes/webshopProjekt/webshop");
 
 mongoose.connect("mongodb://localhost:27017/myapp", {
   useNewUrlParser: true,
@@ -28,6 +28,7 @@ app.use(
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public/"));
+app.set('views', [__dirname + '/views/main', __dirname + '/views/webshop']);
 app.use(methodOverride("_method"));
 app.set("trust proxy", 1);
 app.use(
