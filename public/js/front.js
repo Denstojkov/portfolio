@@ -46,6 +46,7 @@ function transition() {
   words.forEach((word) => {
     var current = document.createElement("span"); // Create element
     current.style.color = getRandomColor();
+    current.classList.add("rfade");
     current.innerHTML = word;
     logo.appendChild(current);
   });
