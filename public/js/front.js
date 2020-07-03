@@ -17,7 +17,7 @@ let slide = document.querySelectorAll(".slide");
 
 window.addEventListener("resize", function () {
   let newWidth = window.innerWidth;
-  console.log(newWidth);
+  
   if (newWidth <= 666) {
     slide.forEach((el) => {
       el.classList.add("resPonsive");
@@ -64,7 +64,7 @@ function getRandomColor() {
 window.addEventListener("scroll", function(event) {
 
 	let trackScroll = this.scrollY;
-	console.log(trackScroll);
+	
 	
 	
 if(trackScroll >= 386){
@@ -74,3 +74,19 @@ if(trackScroll >= 386){
 }
 	})
 
+
+
+
+let navItems = document.querySelectorAll(".nav-item");
+
+const removeSelected = active => navItems.forEach(elem => {
+  if (elem != active) elem.classList.remove("active");
+})
+
+navItems.forEach(navitem => {
+  navitem.addEventListener("click", function() {
+    navitem.classList.toggle("active"); // or add if something has to be selected
+    removeSelected(navitem);
+  });
+
+})

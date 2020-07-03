@@ -238,3 +238,7 @@ a:hover {
     opacity: 1;
   }
 }
+
+.nav-item{
+	font-weight: 500;
+}
