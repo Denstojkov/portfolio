@@ -3,7 +3,6 @@ $(document).ready(function () {
 
   $(window).on("scroll", function () {
     let y = $(this).scrollTop();
-    console.log(y);
     if (y > 600) {
       $(".fadein").each(function (i) {
         $(this)
@@ -61,8 +60,17 @@ function getRandomColor() {
   return color;
 }
 
-let navbar = document.querySelectorAll(".navbar");
-if(window.innerWidth >= 400){
-	console.log("HERE!");
-	navbar.classList.replace("bg-dark", "switch");
+	let navbar = document.querySelector("#mainnav");
+window.addEventListener("scroll", function(event) {
+
+	let trackScroll = this.scrollY;
+	console.log(trackScroll);
+	
+	
+if(trackScroll >= 386){
+	navbar.classList.add("switch");
+}else{
+	navbar.classList.remove("switch");
 }
+	})
+
