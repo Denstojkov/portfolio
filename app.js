@@ -12,7 +12,7 @@ const express = require("express"),
   Contact = require("./models/contact");
 
 let indexRoutes = require("./routes/index");
-let webshopRoutes = require("./routes/webshopProjekt/webshop");
+
 
 mongoose.connect("mongodb://localhost:27017/myapp", {
   useNewUrlParser: true,
@@ -40,11 +40,12 @@ app.use(
 );
 
 app.use(indexRoutes);
-app.use(webshopRoutes);
+
 
 app.get("/", function (req, res) {
   res.redirect("/index");
 });
+
 
 app.listen(3000, function () {
   console.log("Server on 3000");
